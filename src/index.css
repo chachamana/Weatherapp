@@ -1,0 +1,41 @@
+@import-normalize; /* bring in normalize.css styles */
+
+/* rest of app styles */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  letter-spacing: 0.05em;
+  color: white;
+}
+body:after {
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #4fbdec;
+  background: linear-gradient(to bottom, #4661fc 0%, #4fbdec 100%);
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+

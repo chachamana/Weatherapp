@@ -1,0 +1,91 @@
+$sp: 560px;
+$spsmall:400px;
+.forecast {
+  margin-bottom: 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  &__wrapper {
+    display: flex;
+    padding: 25px;
+    @media (max-width: $sp) {
+      flex-direction: column;
+      padding: 20px;
+    }
+  & > div:not(:last-of-type){
+    @media (max-width: $sp) {
+      padding-bottom: 15px;
+      margin-bottom:15px ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+  }
+  &__item {
+    flex-basis: 20%;
+    @media (max-width: $sp) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__time {
+    margin-bottom: 5px;
+    font-size: 12px;
+    @media (max-width: $sp) {
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    max-width: 70px;
+    width: 100%;
+    margin: 0 auto;
+    @media (max-width: $sp) {
+      margin-left: 30px;
+    }
+    @media (max-width: $spsmall) {
+      margin-left: 20px;
+    }
+  }
+  &__weather {
+    @media (max-width: $sp) {
+      text-align: right;
+    }
+  }
+  &__description {
+    font-weight: 600;
+  }
+  &__temperature {
+    margin-bottom: 10px;
+  }
+}
+
+.tab {
+  margin-bottom: 10px;
+  font-size: 13px;
+  display: inline-block;
+  padding: 5px 10px;
+  white-space: nowrap;
+  border-radius: 100vh;
+  background-color: #4478eb;
+
+}
+
+.heading__temperature {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.vertical_align {
+  vertical-align: top;
+}
+
+.br_pc {
+  display: block;
+  @media (max-width: $sp) {
+    display: none;
+  }
+}
